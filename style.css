@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #ffffff; */
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: 100vw;
+  height: 80px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 45%);
+  border-radius: 100%;
+  animation: float 3s ease-in-out infinite, shadow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shadow {
+  0%, 100% {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.resume__info,
+.resume__education,
+.resume__skills {
+  margin-bottom: 30px;
+}
+
+.resume__info h2,
+.resume__education h2,
+.resume__skills h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resume__info p,
+.resume__education p,
+.resume__skills p {
+  margin-bottom: 5px;
+}
+
+.resume__info span {
+  font-weight: bold;
+}
+.contact__form-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Make sure it takes up the full height of the viewport */
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.form__group input,
+.form__group textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--text-light);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit__btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+/* Style for Portfolio Section */
+
+.portfolio {
+  background-color: #f7f7f7; /* Background color */
+  padding: 100px 0; /* Adjust padding as needed */
+}
+
+.portfolio .subtitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.portfolio .title {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.portfolio__item {
+  margin-bottom: 30px;
+}
+
+.portfolio__item-title {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.portfolio__item-description {
+  font-size: 16px;
+  color: #666;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Design Mastery | Responsive Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#" id="typing-text"></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Priyanshu<br /></span>a Web Developer
+                </h1>
+                <p class="description">
+                    Welcome to my web developer portfolio! I'm Priyanshu, a skilled and
+                    creative web developer with a passion for creating beautiful,
+                    responsive, and user-friendly websites. I've worked on a variety of
+                    web projects, ranging from personal blogs to e-commerce platforms.
+                </p>
+                <div class="action__btns">
+                    <button class="hire__me">Hire Me</button>
+                    <button class="portfolio">Portfolio</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="pf.jpeg" alt="profile" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">ABOUT ME</p>
+                <h1 class="title">
+                    About <span>Priyanshu<br /></span>
+                </h1>
+                <p class="description">
+                    I hold a Bachelor’s degree in Computer Science and have over five
+                    years of experience working with top brands. My expertise lies in
+                    creating visually compelling and user-centric websites. I believe
+                    that great design is not just about aesthetics but also about
+                    functionality and purpose.
+                </p>
+                <p class="description">
+                    My journey in web development started from a curiosity about how
+                    websites work. Over the years, I have honed my skills and worked on
+                    a variety of projects. When I'm not coding, I enjoy hiking, reading
+                    sci-fi novels, and experimenting with new recipes.
+                </p>
+            </div>   
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">RESUME</p>
+                <h1 class="title">
+                     My<span> Resume<br /></span>
+                </h1>
+                <div class="resume__info">
+                    <h2>Info :</h2>
+                    <p>I am a dedicated, organized, and methodical individual. I have good interpersonal skills, am an excellent team worker, and am keen and very willing to learn and develop new skills.</p>
+                </div>
+                <div class="resume__education">
+                    <h2>Education :</h2>
+                    <p>
+                        <span>Bachelor's Degree in Computer Science</span><br>
+                        Parul University, 2021-2025, Vadodara, India<br>
+                        Current CGPA: 7.58
+                    </p>
+                    <p>10th from CBSE with 81%</p>
+                    <p>12th from CBSE with 77.6%</p>
+                </div>
+                <div class="resume__skills">
+                    <h2>Skills :</h2>
+                    <p>PYTHON — Competent</p>
+                    <p>DSA — Amateur</p>
+                    <p>MYSQL — Competent</p>
+                    <p>HTML AND CSS — Amateur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">Portfolio</p>
+                <h1 class="title">My <span>Work</span></h1>
+
+                <div class="portfolio__item">
+                 
+                    <h2 class="portfolio__item-title">Portfolio Item 1:</h2>
+                    <p class="portfolio__item-description">Description of Portfolio Item 1 (React base login form) repository link :
+                        https://github.com/PriyanshuBisht3/React-LoginForm.git
+                    </p>
+                </div>
+                <div class="portfolio__item"> 
+                    <h2 class="portfolio__item-title">Portfolio Item 2:</h2>
+                    <p class="portfolio__item-description">Description of Portfolio Item 2 (Emoji Application) repository link :
+                        https://github.com/PriyanshuBisht3/emoji-game.git
+                    </p>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact" class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">CONTACT ME</p>
+                <h1 class="title">Get In <span>Touch</span></h1>
+                <form class="contact__form">
+                    <div class="form__group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit__btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
